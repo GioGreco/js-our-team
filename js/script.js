@@ -36,4 +36,6 @@ let ourTeam = [
     }
 ];
 
+// MILESTONE 1:
+// Stampare su console le informazioni di nome, ruolo e la stringa della foto
 console.log(ourTeam);
