@@ -21,13 +21,13 @@
             <div class="separator"></div>
 
             <div class="container px-5">
-                <div class="team-members row g-5 my-5">
+                <div id="teamMembers" class="team-members row g-5 my-5">
                     <div class="member-wrapper col-6">
                         <div class="member-frontface h-100"></div>
                         <div class="member-backface d-flex flex-column justify-content-around align-content-center">
                             <div class="member-pic"></div>
-                            <h2 class="member-name">Piero Fasulli</h2>
-                            <div class="member-role text-uppercase fs-2">Geografo</div>
+                            <h2 class="member-name"></h2>
+                            <div class="member-role text-uppercase fs-2"></div>
                             <div class="contacts d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-phone"></i>
                                 <i class="fa-solid fa-envelope"></i>
@@ -38,8 +38,8 @@
                         <div class="member-frontface h-100"></div>
                         <div class="member-backface d-flex flex-column justify-content-around align-content-center">
                             <div class="member-pic"></div>
-                            <h2 class="member-name">Piero Fasulli</h2>
-                            <div class="member-role text-uppercase fs-2">Geografo</div>
+                            <h2 class="member-name"></h2>
+                            <div class="member-role text-uppercase fs-2"></div>
                             <div class="contacts d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-phone"></i>
                                 <i class="fa-solid fa-envelope"></i>
@@ -50,8 +50,8 @@
                         <div class="member-frontface h-100"></div>
                         <div class="member-backface w-100 d-flex flex-column justify-content-around align-content-center">
                             <div class="member-pic"></div>
-                            <h2 class="member-name">Piero Fasulli</h2>
-                            <div class="member-role text-uppercase fs-2">Geografo</div>
+                            <h2 class="member-name"></h2>
+                            <div class="member-role text-uppercase fs-2"></div>
                             <div class="contacts d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-phone"></i>
                                 <i class="fa-solid fa-envelope"></i>
@@ -62,8 +62,8 @@
                         <div class="member-frontface h-100"></div>
                         <div class="member-backface d-flex flex-column justify-content-around align-content-center">
                             <div class="member-pic"></div>
-                            <h2 class="member-name">Piero Fasulli</h2>
-                            <div class="member-role text-uppercase fs-2">Geografo</div>
+                            <h2 class="member-name"></h2>
+                            <div class="member-role text-uppercase fs-2"></div>
                             <div class="contacts d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-phone"></i>
                                 <i class="fa-solid fa-envelope"></i>
@@ -74,8 +74,8 @@
                         <div class="member-frontface h-100"></div>
                         <div class="member-backface d-flex flex-column justify-content-around align-content-center">
                             <div class="member-pic"></div>
-                            <h2 class="member-name">Piero Fasulli</h2>
-                            <div class="member-role text-uppercase fs-2">Geografo</div>
+                            <h2 class="member-name"></h2>
+                            <div class="member-role text-uppercase fs-2"></div>
                             <div class="contacts d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-phone"></i>
                                 <i class="fa-solid fa-envelope"></i>
@@ -86,8 +86,8 @@
                         <div class="member-frontface h-100"></div>
                         <div class="member-backface d-flex flex-column justify-content-around align-content-center">
                             <div class="member-pic"></div>
-                            <h2 class="member-name">Piero Fasulli</h2>
-                            <div class="member-role text-uppercase fs-2">Geografo</div>
+                            <h2 class="member-name"></h2>
+                            <div class="member-role text-uppercase fs-2"></div>
                             <div class="contacts d-flex justify-content-center align-items-center">
                                 <i class="fa-solid fa-phone"></i>
                                 <i class="fa-solid fa-envelope"></i>
@@ -97,7 +97,29 @@
                 </div>
             </div>
         </section>
-        <section id="addNewMember" class="vh-100"></section>
+        <section id="addNewMember" class="vh-100 d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center my-3">Join Our Team</h2>
+            <div class="separator"></div>
+            <form class="my-5">
+                <div class="form-group">
+                  <label for="newMemberName">Tell us your name</label>
+                  <input type="text" class="form-control my-2" id="newMemberName" placeholder="Your name here">
+                </div>
+                <div class="form-group">
+                    <label for="newMemberRole">Decide your role</label>
+                    <input type="text" class="form-control my-2" id="newMemberRole" placeholder="Your role here">
+                  </div>
+                <div class="form-group mb-4">
+                  <label for="exampleFormControlSelect1">Select your Profile-Pic</label>
+                  <select class="form-control my-2" id="picSelector">
+                    <option value="carloConti.jpeg">Carlo Conti</option>
+                    <option value="leleMora.jpeg">Lele Mora</option>
+                    <option value="theRock.jpeg">The Rock</option>
+                  </select>
+                </div>
+                <button id="joinBtn" type="button" class="btn btn-info my-2">JOIN</button>
+              </form>
+        </section>
     </div>
 
     <script type="text/javascript" src="./js/script.js"></script>
