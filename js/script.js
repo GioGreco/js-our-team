@@ -44,21 +44,30 @@ console.log(ourTeam);
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
 
 let imgArray = [];
+let nameArray = [];
+let roleArray = [];
 
 for(let value of ourTeam){
     imgArray.push(value.img);
-}
-
-let picsHTML = document.querySelectorAll('.member-frontface');
-
-for(let i = 0; i < picsHTML.length; i++){
-    picsHTML[i].style.backgroundImage = `url(../img/${imgArray[i]})`;
-}
-
-let backfacePicHTML = document.querySelectorAll('.member-pic');
-
-for(let i = 0; i < backfacePicHTML.length; i++){
-    backfacePicHTML[i].style.backgroundImage = `url(../img/${imgArray[i]})`;
+    nameArray.push(value.name);
+    roleArray.push(value.role);
 }
 
 console.log(imgArray);
+console.log(nameArray);
+console.log(roleArray);
+
+let totMembers = ourTeam.length;
+
+let picsHTML = document.querySelectorAll('.member-frontface');
+let backfacePicHTML = document.querySelectorAll('.member-pic');
+let namesHTML = document.querySelectorAll('.member-name');
+let roleHTML = document.querySelectorAll('.member-role');
+
+for(let i = 0; i < totMembers; i++){
+    picsHTML[i].style.backgroundImage = `url(../img/${imgArray[i]})`;
+    backfacePicHTML[i].style.backgroundImage = `url(../img/${imgArray[i]})`;
+    namesHTML[i].innerHTML = `${nameArray[i]}`;
+    roleHTML[i].innerHTML = `${roleArray[i]}`;
+}
+
