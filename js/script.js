@@ -39,3 +39,26 @@ let ourTeam = [
 // MILESTONE 1:
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
 console.log(ourTeam);
+
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+let imgArray = [];
+
+for(let value of ourTeam){
+    imgArray.push(value.img);
+}
+
+let picsHTML = document.querySelectorAll('.member-frontface');
+
+for(let i = 0; i < picsHTML.length; i++){
+    picsHTML[i].style.backgroundImage = `url(../img/${imgArray[i]})`;
+}
+
+let backfacePicHTML = document.querySelectorAll('.member-pic');
+
+for(let i = 0; i < backfacePicHTML.length; i++){
+    backfacePicHTML[i].style.backgroundImage = `url(../img/${imgArray[i]})`;
+}
+
+console.log(imgArray);
