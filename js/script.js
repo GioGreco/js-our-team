@@ -73,7 +73,9 @@ function reset(){
 
     for(let i = 0; i < totMembers; i++){
         picsHTML[i].style.backgroundImage = `url(../img/${imgArray[i]})`;
+        picsHTML[i].style.backgroundPosition = 'center middle';
         backfacePicHTML[i].style.backgroundImage = `url(../img/${imgArray[i]})`;
+        backfacePicHTML[i].style.backgroundPosition = 'center middle';
         namesHTML[i].innerHTML = `${nameArray[i]}`;
         roleHTML[i].innerHTML = `${roleArray[i]}`;
     }
